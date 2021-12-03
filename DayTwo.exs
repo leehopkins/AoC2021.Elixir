@@ -28,7 +28,7 @@ end)
         {"forward", x} -> {depth + aim * elem(x, 0), horizontal + elem(x, 0), aim}
         {"down", x} -> {depth, horizontal, aim + elem(x, 0)}
         {"up", x} -> {depth, horizontal, aim -  elem(x, 0)}
-        _ -> {depth, horizontal}
+        _ -> {depth, horizontal, aim}
     end
 end)
 

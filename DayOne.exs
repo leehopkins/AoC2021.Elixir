@@ -24,7 +24,7 @@ IO.puts(elem(partTwoSampleResult, 1))
 # I don't want to deal with user input or relative paths right now, so magic strings are acceptable
 partOneResult = File.stream!("/mnt/c/Users/lee-h/source/repos/AoC2021.iex/DayOneInput.txt")
 |> Stream.map(fn (line) ->
-    # I didn't find anything like int.TryParse (C#) and this works, I'm sure this is a better way to do it tho
+    # I didn't find anything like int.TryParse (C#) and this works, I'm sure there is a better way to do it tho
     case Integer.parse(String.trim(line)) do
     {n, ""} -> n
     _ -> nil
